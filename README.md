@@ -1,9 +1,7 @@
 # About
-
 Implementation of standard Array methods (introduced in ECMAScript 5th edition) and shorthand generics (JavaScript 1.8.5)
 
 ## Examples
-
 ```javascript
 function isElement(element) {
 	return element.nodeType === 1;
@@ -19,11 +17,9 @@ children = Array.filter(document.childNodes, isElement);
 children = Array.slice(document.childNodes).filter(isElement);
 ```
 ## Methods
-
 The following methods available in standard and shorthand notation
 
 ### Mutator
-
 * pop
 * push
 * reverse
@@ -33,16 +29,13 @@ The following methods available in standard and shorthand notation
 * unshift
 
 ### Accessor
-
 * concat
 * join
 * slice
 * indexOf
 * lastIndexOf
-* 
 
 ### Iteration
-
 * forEach
 * every
 * some
