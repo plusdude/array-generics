@@ -28,7 +28,7 @@ All the following methods (except isArray) available in standard and generic sho
         <th>Other</th>
     </tr>
     <tr>
-        <td><a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.6)">pop</a></td>
+        <td><a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.6">pop</a></td>
         <td>.concat()</td>
         <td>.forEach()</td>
         <td>.isArray()</td>
