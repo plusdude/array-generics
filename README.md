@@ -16,45 +16,57 @@ children = Array.filter(document.childNodes, isElement);
 // using generic .slice() and array .filter()
 children = Array.slice(document.childNodes).filter(isElement);
 ```
+
+### Methods
+All the following methods (except isArray) available in standard and generic shorthand notation:
+
 <table>
     <tr>
         <th>Mutator methods</th>
         <th>Accessor methods</th>
         <th>Iteration methods</th>
+        <th>Other methods</th>
     </tr>
     <tr>
         <td>pop</td>
         <td>concat</td>
         <td>forEach</td>
+        <td>isArray</td>
     </tr>
      <tr>
         <td>push</td>
         <td>join</td>
         <td>every</td>
+        <td></td>
     </tr>
     <tr>
         <td>reverse</td>
         <td>slice</td>
         <td>some</td>
+        <td></td>
     </tr>
     <tr>
         <td>shift</td>
         <td>indexOf</td>
         <td>filter</td>
+        <td></td>
     </tr>
     <tr>
         <td>sort</td>
         <td>lastIndexOf</td>
         <td>map</td>
+        <td></td>
     </tr>
     <tr>
         <td>splice</td>
         <td></td>
         <td>reduce</td>
+        <td></td>
     </tr>
     <tr>
         <td>unshift</td>
         <td></td>
         <td>reduceRight</td>
+        <td></td>
     </tr>
 </table>
