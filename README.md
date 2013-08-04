@@ -2,11 +2,11 @@ About
 ===
 Implementation of the Array methods (ECMAScript 5th edition) with shorthand notation (introduced in JavaScript 1.6)
 
-Example:
+Example
 ---
 
 ```javascript
-Array.slice(document.childNodes).filter(function (element) {
+var children = Array.filter(document.childNodes, function (element) {
 	return element.nodeType === 1;
 });
 ```
