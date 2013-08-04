@@ -21,7 +21,7 @@ console.log(
 ```
 
 ## Methods
-What array.generics.js implements:
+What ```array.generics.js``` implements:
 
 <table>
     <tr>
