@@ -13,7 +13,7 @@ var children;
 children = Array.filter(document.childNodes, isElement);
 
 // example #2
-// using generic .slice() and array .filter()
+// using generic .slice() and instance .filter()
 children = Array.slice(document.childNodes).filter(isElement);
 ```
 
