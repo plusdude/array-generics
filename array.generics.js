@@ -1,8 +1,8 @@
 /**
- * Implementation of the Array methods (ECMAScript 5th edition)
- * with shorthand notation (introduced in JavaScript 1.6)
+ * Implementation of standard Array methods (introduced in ECMAScript 5th
+ * edition) and shorthand generics (introduced in JavaScript 1.6)
  *
- * Copyright 2013 Alex K. @plusdude
+ * Copyright (c) 2013 Alex K @plusdude
  * http://opensource.org/licenses/MIT
  */
 (function (infinity, undefined) {
