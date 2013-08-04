@@ -8,13 +8,13 @@ function isElement(element) {
 }
 
 // example #1 
-// using generic .filter()
+// generic .filter()
 console.log(
 	Array.filter(document.childNodes, isElement)
 );
 
 // example #2
-// using generic .slice() and instance .filter()
+// generic .slice() and standard .filter()
 console.log( 
 	Array.slice(document.childNodes).filter(isElement)
 );
