@@ -28,7 +28,9 @@ All the following methods (except isArray) available in standard and generic sho
         <th>Other</th>
     </tr>
     <tr>
-        <td>`.pop()`</td>
+        <td>
+        	.pop()
+        </td>
         <td>`.concat()`</td>
         <td>`.forEach()`</td>
         <td>`.isArray()`</td>
