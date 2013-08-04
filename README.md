@@ -6,15 +6,18 @@ Implementation of standard Array methods (introduced in ECMAScript 5th edition) 
 function isElement(element) {
 	return element.nodeType === 1;
 }
-var children;
 
 // example #1 
 // using generic .filter()
-children = Array.filter(document.childNodes, isElement);
+console.log(
+	Array.filter(document.childNodes, isElement)
+);
 
 // example #2
 // using generic .slice() and instance .filter()
-children = Array.slice(document.childNodes).filter(isElement);
+console.log( 
+	Array.slice(document.childNodes).filter(isElement)
+);
 ```
 
 ## Methods
