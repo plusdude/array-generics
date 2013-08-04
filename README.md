@@ -21,7 +21,6 @@ console.log(
 ```
 
 ## Methods
-The following methods available in standard and generic shorthand notation:
 
 <table>
     <tr>
