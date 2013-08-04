@@ -17,7 +17,7 @@ children = Array.filter(document.childNodes, isElement);
 children = Array.slice(document.childNodes).filter(isElement);
 ```
 
-### Methods
+## Methods
 The following methods available in standard and generic shorthand notation:
 
 <table>
