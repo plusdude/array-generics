@@ -28,10 +28,10 @@ All the following methods (except isArray) available in standard and generic sho
         <th>Other</th>
     </tr>
     <tr>
-        <td><a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.6">pop</a></td>
-        <td>.concat()</td>
-        <td>.forEach()</td>
-        <td>.isArray()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">pop</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">concat</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray">isArray</a></td>
     </tr>
      <tr>
         <td>.push()</td>
