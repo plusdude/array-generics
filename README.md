@@ -21,9 +21,9 @@ The following methods available in standard and shorthand notation:
 
 <table>
     <tr>
-        <th>Mutator</th>
-        <th>Accessor</th>
-        <th>Iteration</th>
+        <th>Mutator methods</th>
+        <th>Accessor methods</th>
+        <th>Iteration methods</th>
     </tr>
     <tr>
         <td>pop</td>
