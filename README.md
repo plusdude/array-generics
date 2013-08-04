@@ -20,7 +20,7 @@ children = Array.slice(document.childNodes).filter(isElement);
 ### Methods
 All the following methods (except isArray) available in standard and generic shorthand notation:
 
-<table style="width:100%; table-layout:fixed">
+<table>
     <tr>
         <th>Mutator</th>
         <th>Accessor</th>
@@ -28,7 +28,7 @@ All the following methods (except isArray) available in standard and generic sho
         <th>Other</th>
     </tr>
     <tr>
-        <td>.pop()</td>
+        <td>[pop](http://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.6)</td>
         <td>.concat()</td>
         <td>.forEach()</td>
         <td>.isArray()</td>
