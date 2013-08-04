@@ -9,14 +9,14 @@ function isElement(element) {
 
 // example #1
 console.log(
-	// shorthand .filter()
-	Array.filter(document.childNodes, isElement)
+	// shorthand .slice() and standard .filter()
+	Array.slice(document.childNodes).filter(isElement)
 );
 
 // example #2
 console.log(
-	// shorthand .slice() and standard .filter()
-	Array.slice(document.childNodes).filter(isElement)
+	// shorthand .filter()
+	Array.filter(document.childNodes, isElement)
 );
 ```
 
