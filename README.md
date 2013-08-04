@@ -7,15 +7,15 @@ function isElement(element) {
 	return element.nodeType === 1;
 }
 
-// example #1 
-// generic .filter()
+// example #1
 console.log(
+	// generic .filter()
 	Array.filter(document.childNodes, isElement)
 );
 
 // example #2
-// generic .slice() and standard .filter()
-console.log( 
+console.log(
+	// generic .slice() and standard .filter()
 	Array.slice(document.childNodes).filter(isElement)
 );
 ```
