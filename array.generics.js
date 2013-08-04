@@ -18,16 +18,16 @@
 
 		// let number be the result of calling ToNumber on the input argument
 		number = Number(value);
-        return (
-            // if number is NaN, return 0
-            number !== number ? 0 :
+		return (
+			// if number is NaN, return 0
+			number !== number ? 0 :
 
-            // if number is 0, Infinity, or -Infinity, return number
-            0 === number || infinity === number || -infinity === number ? number :
+			// if number is 0, Infinity, or -Infinity, return number
+			0 === number || infinity === number || -infinity === number ? number :
 
-            // return the result of computing sign(number) * floor(abs(number))
-            (0 < number || -1) * Math.floor(Math.abs(number))
-        );
+			// return the result of computing sign(number) * floor(abs(number))
+			(0 < number || -1) * Math.floor(Math.abs(number))
+		);
 	}
 
 	/**
@@ -37,13 +37,13 @@
 	function toObject(value) {
 		var error;
 
-        // value is undefined or null
-        if (undefined === value || null === value) {
+		// value is undefined or null
+		if (undefined === value || null === value) {
 
-            // error message and call stack, if supported
-            throw (error = new Error("can't convert " + value + " to object")).stack || error;
-        }
-        return new Object(value);
+			// error message and call stack, if supported
+			throw (error = new Error("can't convert " + value + " to object")).stack || error;
+		}
+		return new Object(value);
 	}
 
 	/**
