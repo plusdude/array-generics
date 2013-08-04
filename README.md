@@ -17,29 +17,47 @@ children = Array.filter(document.childNodes, isElement);
 children = Array.slice(document.childNodes).filter(isElement);
 ```
 ## Methods
-The following methods available in standard and shorthand notation
+The following methods available in standard and shorthand notation:
 
-### Mutator
-* pop
-* push
-* reverse
-* shift
-* sort
-* splice
-* unshift
-
-### Accessor
-* concat
-* join
-* slice
-* indexOf
-* lastIndexOf
-
-### Iteration
-* forEach
-* every
-* some
-* filter
-* map
-* reduce
-* reduceRight
+<table>
+    <tr>
+        <th>Mutator</th>
+        <th>Accessor</th>
+        <th>Iteration</th>
+    </tr>
+    <tr>
+        <td>pop</td>
+        <td>concat</td>
+        <td>forEach</td>
+    </tr>
+     <tr>
+        <td>push</td>
+        <td>join</td>
+        <td>every</td>
+    </tr>
+    <tr>
+        <td>reverse</td>
+        <td>slice</td>
+        <td>some</td>
+    </tr>
+    <tr>
+        <td>shift</td>
+        <td>indexOf</td>
+        <td>filter</td>
+    </tr>
+    <tr>
+        <td>sort</td>
+        <td>lastIndexOf</td>
+        <td>map</td>
+    </tr>
+    <tr>
+        <td>splice</td>
+        <td></td>
+        <td>reduce</td>
+    </tr>
+    <tr>
+        <td>unshift</td>
+        <td></td>
+        <td>reduceRight</td>
+    </tr>
+</table>
