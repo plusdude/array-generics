@@ -9,13 +9,13 @@ function isElement(element) {
 
 // example #1
 console.log(
-	// generic .filter()
+	// shorthand .filter()
 	Array.filter(document.childNodes, isElement)
 );
 
 // example #2
 console.log(
-	// generic .slice() and standard .filter()
+	// shorthand .slice() and standard .filter()
 	Array.slice(document.childNodes).filter(isElement)
 );
 ```
