@@ -18,7 +18,7 @@ children = Array.slice(document.childNodes).filter(isElement);
 ```
 
 ### Methods
-All the following methods (except isArray) available in standard and generic shorthand notation:
+The following methods available in standard and generic shorthand notation:
 
 <table>
     <tr>
@@ -34,39 +34,39 @@ All the following methods (except isArray) available in standard and generic sho
         <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray">isArray</a></td>
     </tr>
      <tr>
-        <td>.push()</td>
-        <td>.join()</td>
-        <td>.every()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">join</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every">every</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>.reverse()</td>
-        <td>.slice()</td>
-        <td>.some()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">reverse</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some">some</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>.shift()</td>
-        <td>.indexOf()</td>
-        <td>.filter()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift">shift</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">indexOf</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>.sort()</td>
-        <td>.lastIndexOf()</td>
-        <td>.map()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">sort</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf">lastIndexOf</a></td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">map</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>.splice()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">splice</a></td>
         <td></td>
-        <td>.reduce()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">reduce</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>.unshift()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift">unshift</a></td>
         <td></td>
-        <td>.reduceRight()</td>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight">reduceRight</a></td>
         <td></td>
     </tr>
 </table>
