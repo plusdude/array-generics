@@ -20,7 +20,7 @@ children = Array.slice(document.childNodes).filter(isElement);
 ### Methods
 All the following methods (except isArray) available in standard and generic shorthand notation:
 
-<table style="table-layout:fixed">
+<table style="width:100%; table-layout:fixed">
     <tr>
         <th>Mutator</th>
         <th>Accessor</th>
@@ -28,47 +28,45 @@ All the following methods (except isArray) available in standard and generic sho
         <th>Other</th>
     </tr>
     <tr>
-        <td>
-        	.pop()
-        </td>
-        <td>`.concat()`</td>
-        <td>`.forEach()`</td>
-        <td>`.isArray()`</td>
+        <td>.pop()</td>
+        <td>.concat()</td>
+        <td>.forEach()</td>
+        <td>.isArray()</td>
     </tr>
      <tr>
-        <td>`.push()`</td>
-        <td>`.join()`</td>
-        <td>`.every()`</td>
+        <td>.push()</td>
+        <td>.join()</td>
+        <td>.every()</td>
         <td></td>
     </tr>
     <tr>
-        <td>`.reverse()`</td>
-        <td>`.slice()`</td>
-        <td>`.some()`</td>
+        <td>.reverse()</td>
+        <td>.slice()</td>
+        <td>.some()</td>
         <td></td>
     </tr>
     <tr>
-        <td>`.shift()`</td>
-        <td>`.indexOf()`</td>
-        <td>`.filter()`</td>
+        <td>.shift()</td>
+        <td>.indexOf()</td>
+        <td>.filter()</td>
         <td></td>
     </tr>
     <tr>
-        <td>`.sort()`</td>
-        <td>`.lastIndexOf()`</td>
-        <td>`.map()`</td>
+        <td>.sort()</td>
+        <td>.lastIndexOf()</td>
+        <td>.map()</td>
         <td></td>
     </tr>
     <tr>
-        <td>`.splice()`</td>
+        <td>.splice()</td>
         <td></td>
-        <td>`.reduce()`</td>
+        <td>.reduce()</td>
         <td></td>
     </tr>
     <tr>
-        <td>`.unshift()`</td>
+        <td>.unshift()</td>
         <td></td>
-        <td>`.reduceRight()`</td>
+        <td>.reduceRight()</td>
         <td></td>
     </tr>
 </table>
