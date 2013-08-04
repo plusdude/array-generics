@@ -9,11 +9,11 @@ function isElement(element) {
 var children;
 
 // example #1 
-// using shorthang .filter()
+// using generic .filter()
 children = Array.filter(document.childNodes, isElement);
 
 // example #2
-// using shorthand .slice() and standard .filter()
+// using generic .slice() and array .filter()
 children = Array.slice(document.childNodes).filter(isElement);
 ```
 ## Methods
