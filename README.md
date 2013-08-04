@@ -1,6 +1,6 @@
 About
 ===
-Implementation of the Array methods specified in ECMAScript 5th edition and shorthand generics introduced in JavaScript 1.6
+Implementation of standard Array methods (introduced in ECMAScript 5th edition) and shorthand generics (introduced in JavaScript 1.6)
 
 Examples
 ---
