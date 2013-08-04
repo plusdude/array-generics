@@ -16,9 +16,6 @@ children = Array.filter(document.childNodes, isElement);
 // using generic .slice() and array .filter()
 children = Array.slice(document.childNodes).filter(isElement);
 ```
-## Methods
-The following methods available in standard and shorthand notation:
-
 <table>
     <tr>
         <th>Mutator methods</th>
