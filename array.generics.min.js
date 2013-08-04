@@ -1,6 +1,6 @@
 /**
  * Implementation of standard Array methods (introduced in ECMAScript 5th
- * edition) and shorthand generics (introduced in JavaScript 1.6)
+ * edition) and shorthand generics (JavaScript 1.8.5)
  *
  * Copyright (c) 2013 Alex K @plusdude
  * http://opensource.org/licenses/MIT
