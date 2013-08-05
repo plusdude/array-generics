@@ -1,5 +1,5 @@
 # About
-Implementation of standard Array methods (introduced in ECMAScript 5th edition) and shorthand generics (JavaScript 1.8.5) Works in all browsers that supports JavaScript 1.2
+Implementation of standard Array methods (introduced in ECMAScript 5th edition) and shorthand generics (JavaScript 1.8) Browser support: IE6+, FF1+, Chrome, Safari, Opera.
 
 ## Examples
 ```javascript
