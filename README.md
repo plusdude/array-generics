@@ -4,19 +4,19 @@ Implementation of standard Array methods (introduced in ECMAScript 5th edition) 
 ## Examples
 ```javascript
 function isElement(element) {
-	return element.nodeType === 1;
+    return element.nodeType === 1;
 }
 
 // example #1
 console.log(
-	// shorthand slice and standard filter
-	Array.slice(document.childNodes).filter(isElement)
+    // shorthand slice and standard filter
+    Array.slice(document.childNodes).filter(isElement)
 );
 
 // example #2
 console.log(
-	// shorthand filter
-	Array.filter(document.childNodes, isElement)
+    // shorthand filter
+    Array.filter(document.childNodes, isElement)
 );
 ```
 
