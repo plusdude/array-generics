@@ -53,7 +53,7 @@
         // convert length to unsigned 32 bit integer
         length = elements.length >>> 0;
 
-        // begin index is set
+        // calculate begin index, if is set
         if (undefined !== begin) {
 
             // convert to integer
@@ -65,7 +65,7 @@
             // default value
             index = 0;
         }
-        // end index is set
+        // calculate end index, if is set
         if (undefined !== end) {
 
             // convert to integer
@@ -83,7 +83,7 @@
             // current index exists
             if (index in elements) {
 
-                // copy current element to a result array
+                // copy current element to result array
                 result[count] = elements[index];
             }
         }
@@ -120,7 +120,7 @@
         // iterate over elements
         for (; index < length; ++index) {
 
-            // current index exists, target element == current element
+            // current index exists, target element is equal to current element
             if (index in elements && target === elements[index]) {
 
                 // break loop, target element found
@@ -298,7 +298,7 @@
             // callback returns true
             callback.call(scope, elements[index], index, elements)) {
 
-                // save current element in the result array
+                // copy current element to result array
                 result[count++] = elements[index];
             }
         }
@@ -329,7 +329,7 @@
             // current index exists
             if (index in elements) {
 
-                // save the return value of the callback in the result array
+                // copy a return value of callback to result array
                 result[index] = callback.call(scope, elements[index], index, elements);
             }
         }
@@ -366,7 +366,7 @@
                 // initial value is set
                 if (isset) {
 
-                    // replace the initial value with the return value of the callback
+                    // replace initial value with a return value of callback
                     value = callback(value, elements[index], index, elements);
                 } else {
                     // current element becomes initial value
@@ -412,7 +412,7 @@
                 // initial value is set
                 if (isset) {
 
-                    // replace the initial value with the return value of the callback
+                    // replace initial value with a return value of callback
                     value = callback(value, elements[index], index, elements);
                 } else {
                     // current element becomes initial value
