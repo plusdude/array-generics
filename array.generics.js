@@ -153,7 +153,7 @@
             begin = toInteger(begin);
 
             // handle -begin, begin > length - 1
-            index = 0 > begin ? Math.max(length + begin, 0) : Math.min(begin, length - 1);
+            index = 0 > begin ? length - Math.abs(begin) : Math.min(begin, length - 1);
         } else {
             // default value
             index = length - 1;
@@ -458,15 +458,51 @@
 
     /**
      * Helper function.
-     * Assigns method to Array constructor.
+     * Tests implementation of standard Array method.
      */
-    function extendArray(key) {
-        Array[key] = Array[key] || makeStatic(key);
+    function supportsStandard(key) {
+        var support = true;
+        if (Array.prototype[key]) {
+            try {
+                Array.prototype[key].call(undefined, /test/, null);
+                support = false;
+            } catch (e) {}
+        } else {
+            support = false;
+        }
+        return support;
     }
 
     /**
      * Helper function.
-     * Creates static method from an instance method.
+     * Tests implementation of generic Array method.
+     */
+    function supportsGeneric(key) {
+        var support = true;
+        if (Array[key]) {
+            try {
+                Array[key](undefined, /test/, null);
+                support = false;
+            } catch (e) {}
+        } else {
+            support = false;
+        }
+        return support;
+    }
+
+    /**
+     * Helper function.
+     * Assigns method to Array constructor.
+     */
+    function extendArray(key) {
+        if (!supportsGeneric(key)) {
+            Array[key] = makeStatic(key);
+        }
+    }
+
+    /**
+     * Helper function.
+     * Creates generic method from an instance method.
      */
     function makeStatic(key) {
         return function (value) {
@@ -495,10 +531,14 @@
         "reduce": reduce,
         "reduceRight": reduceRight
     };
+
     for (var key in ES5) {
         if (ES5.hasOwnProperty(key)) {
+
+            if (!supportsStandard(key)) {
+                Array.prototype[key] = ES5[key];
+            }
             extendArray(key);
-            Array.prototype[key] = Array.prototype[key] || ES5[key];
         }
     }
     Array.isArray = Array.isArray || isArray;
