@@ -10,7 +10,7 @@
     "use strict";
 
     /**
-     * Local references to constructors in global scope.
+     * Local references to constructors at global scope.
      * This may speed up access and slightly reduce file size of minified version.
      */
     var Array = global.Array;
@@ -437,8 +437,8 @@
     }
 
     /**
-     * Helper function.
      * Tests if an argument is callable and throws an error if it is not.
+     * @private
      */
     function requireFunction(value) {
         if ("[object Function]" !== Object.prototype.toString.call(value)) {
@@ -447,8 +447,8 @@
     }
 
     /**
-     * Helper function.
      * Throws an error if an argument can be converted to true.
+     * @private
      */
     function requireValue(isset) {
         if (!isset) {
@@ -457,16 +457,23 @@
     }
 
     /**
-     * Helper function.
      * Tests implementation of standard Array method.
+     * @private
      */
     function supportsStandard(key) {
         var support = true;
+
+        // a method exists
         if (Array.prototype[key]) {
             try {
+                // apply dummy arguments
                 Array.prototype[key].call(undefined, /test/, null);
+
+                // passed? implemented wrong
                 support = false;
-            } catch (e) {}
+            } catch (e) {
+                // do nothing
+            }
         } else {
             support = false;
         }
@@ -474,16 +481,23 @@
     }
 
     /**
-     * Helper function.
      * Tests implementation of generic Array method.
+     * @private
      */
     function supportsGeneric(key) {
         var support = true;
+
+        // a method exists
         if (Array[key]) {
             try {
+                // apply dummy arguments
                 Array[key](undefined, /test/, null);
+
+                // passed? implemented wrong
                 support = false;
-            } catch (e) {}
+            } catch (e) {
+                // do nothing
+            }
         } else {
             support = false;
         }
@@ -491,28 +505,29 @@
     }
 
     /**
-     * Helper function.
      * Assigns method to Array constructor.
+     * @private
      */
     function extendArray(key) {
         if (!supportsGeneric(key)) {
-            Array[key] = makeStatic(key);
+            Array[key] = createGeneric(key);
         }
     }
 
     /**
-     * Helper function.
      * Creates generic method from an instance method.
+     * @private
      */
-    function makeStatic(key) {
-        return function (value) {
-            var extras;
+    function createGeneric(key) {
+        /** @public */
+        return function (elements) {
+            var list;
 
-            if (undefined === value || null === value) {
-                throw new Error("Array.prototype." + key + " called on " + value);
+            if (undefined === elements || null === elements) {
+                throw new Error("Array.prototype." + key + " called on " + elements);
             }
-            extras = Array.prototype.slice.call(arguments, 1);
-            return Array.prototype[key].apply(value, extras);
+            list = Array.prototype.slice.call(arguments, 1);
+            return Array.prototype[key].apply(elements, list);
         };
     }
 
@@ -531,7 +546,6 @@
         "reduce": reduce,
         "reduceRight": reduceRight
     };
-
     for (var key in ES5) {
         if (ES5.hasOwnProperty(key)) {
 
@@ -562,8 +576,8 @@
     ES3.forEach(extendArray);
 
     /**
-     * Support: IE < 9
      * Make the slice method to work with the DOM nodes.
+     * Support: IE < 9
      */
     try {
         Array.slice({});
