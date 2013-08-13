@@ -22,11 +22,15 @@ console.log(
 
 ## Usage
 
+Just include in your document.
+
 ```html
 <script src="path_to/array.generics.min.js"></script>
 ```
 
 ## Methods
+
+Available as generics and standard.
 
 <table>
     <tr>
