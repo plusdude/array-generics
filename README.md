@@ -21,7 +21,7 @@ console.log(
 ```
 
 ## Usage
-Just include array.generics.min.js in your document
+Just include `array.generics.min.js` in your document
 
     <script src="path_to/array.generics.min.js"></script>
 
