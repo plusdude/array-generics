@@ -532,7 +532,7 @@
     }
 
     /**
-     * Assign ES-5 methods to Array constructor,
+     * Assign ECMAScript-5 methods to Array constructor,
      * and Array prototype.
      */
     var ES5 = {
@@ -558,10 +558,10 @@
     Array.isArray = Array.isArray || isArray;
 
     /**
-     * Assign ES-3 methods to Array constructor.
+     * Assign ECMAScript-3 methods to Array constructor.
      * The toString method is omitted.
      */
-    var ES3 = [
+    [
         "concat",
         "join",
         "slice",
@@ -572,17 +572,20 @@
         "sort",
         "splice",
         "unshift"
-    ];
-    ES3.forEach(extendArray);
+
+    ].forEach(extendArray);
 
     /**
-     * Make the slice method to work with the DOM nodes.
+     * Test the slice method on DOM NodeList.
      * Support: IE < 9
      */
-    try {
-        Array.slice({});
-    } catch (e) {
-        Array.prototype.slice = slice;
+    /*jshint browser:true*/
+    if (document) {
+        try {
+            Array.slice(document.childNodes);
+        } catch (e) {
+            Array.prototype.slice = slice;
+        }
     }
 
 }(this, 1 / 0));
