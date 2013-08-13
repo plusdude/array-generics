@@ -22,7 +22,7 @@ console.log(
 
 ## Usage
 
-Just include in your document.
+Just include into your document:
 
 ```html
 <script src="path_to/array.generics.min.js"></script>
@@ -30,7 +30,7 @@ Just include in your document.
 
 ## Methods
 
-Available as generics and standard.
+Available as generics and standard:
 
 <table>
     <tr>
